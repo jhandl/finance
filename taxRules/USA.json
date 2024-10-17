@@ -1,0 +1,41 @@
+{
+  "incomeTaxes": [
+    {
+      "name": "Federal Income Tax",
+      "type": "bracket",
+      "brackets": [
+        {"rate": 0.1, "from": 0, "to": 9950},
+        {"rate": 0.12, "from": 9951, "to": 40525},
+        {"rate": 0.22, "from": 40526, "to": 86375},
+        {"rate": 0.24, "from": 86376, "to": 164925},
+        {"rate": 0.32, "from": 164926, "to": 209425},
+        {"rate": 0.35, "from": 209426, "to": 523600},
+        {"rate": 0.37, "from": 523601, "to": null}
+      ]
+    },
+    {
+      "name": "Social Security Tax",
+      "type": "flatRate",
+      "rate": 0.062,
+      "threshold": 0
+    },
+    {
+      "name": "Medicare Tax",
+      "type": "flatRate",
+      "rate": 0.0145,
+      "threshold": 0
+    }
+  ],
+  "capitalGainsTax": {
+    "indexFunds": 0.2,
+    "etfs": 0.2,
+    "investmentTrusts": 0.22,
+    "individualShares": 0.25,
+    "bonds": 0.15
+  },
+  "pensionContribution": {
+    "type": "fixedRate",
+    "employeeRate": 0.062,
+    "employerRate": 0.062
+  }
+}

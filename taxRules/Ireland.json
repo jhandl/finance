@@ -1,0 +1,46 @@
+{
+  "incomeTaxes": [
+    {
+      "name": "Income Tax",
+      "type": "bracket",
+      "brackets": [
+        {"rate": 0.20, "from": 0, "to": 36800},
+        {"rate": 0.40, "from": 36801, "to": null}
+      ]
+    },
+    {
+      "name": "Universal Social Charge",
+      "type": "bracket",
+      "brackets": [
+        {"rate": 0.005, "from": 0, "to": 12012},
+        {"rate": 0.02, "from": 12013, "to": 21295},
+        {"rate": 0.045, "from": 21296, "to": 70044},
+        {"rate": 0.08, "from": 70045, "to": null}
+      ]
+    },
+    {
+      "name": "Pay Related Social Insurance",
+      "type": "flatRate",
+      "rate": 0.04,
+      "threshold": 18304
+    }
+  ],
+  "capitalGainsTax": {
+    "indexFunds": 0.33,
+    "etfs": 0.33,
+    "investmentTrusts": 0.33,
+    "individualShares": 0.33,
+    "bonds": 0.33
+  },
+  "pensionContribution": {
+    "type": "ageBasedPercentage",
+    "rates": [
+      { "maxAge": 29, "rate": 0.15 },
+      { "maxAge": 39, "rate": 0.20 },
+      { "maxAge": 49, "rate": 0.25 },
+      { "maxAge": 59, "rate": 0.30 },
+      { "maxAge": 999, "rate": 0.35 }
+    ],
+    "annualCap": 115000
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "incomeTaxes": [
+    {
+      "name": "Income Tax",
+      "type": "bracket",
+      "brackets": [
+        {"rate": 0.14, "from": 0, "to": 10000},
+        {"rate": 0.3, "from": 10001, "to": 50000},
+        {"rate": 0.42, "from": 50001, "to": 200000},
+        {"rate": 0.45, "from": 200001, "to": null}
+      ]
+    }
+  ],
+  "wealthTax": {"rate": 0.01, "threshold": 1000000},
+  "capitalGainsTax": {
+    "indexFunds": 0.25,
+    "etfs": 0.25,
+    "investmentTrusts": 0.28,
+    "individualShares": 0.3,
+    "bonds": 0.15
+  },
+  "pensionContribution": {
+    "type": "fixedRate",
+    "employeeRate": 0.09,
+    "employerRate": 0.09
+  }
+}
