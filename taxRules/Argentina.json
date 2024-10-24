@@ -1,0 +1,47 @@
+{
+  "incomeTaxes": [
+    {
+      "name": "Income Tax",
+      "type": "bracket",
+      "brackets": [
+        {"rate": 0.05, "from": 0, "to": 64532.64},
+        {"rate": 0.09, "from": 64532.65, "to": 129065.28},
+        {"rate": 0.12, "from": 129065.29, "to": 193597.92},
+        {"rate": 0.15, "from": 193597.93, "to": 258130.56},
+        {"rate": 0.19, "from": 258130.57, "to": 387195.84},
+        {"rate": 0.23, "from": 387195.85, "to": 516261.12},
+        {"rate": 0.27, "from": 516261.13, "to": 774391.68},
+        {"rate": 0.31, "from": 774391.69, "to": 1032522.24},
+        {"rate": 0.35, "from": 1032522.25, "to": null}
+      ]
+    },
+    {
+      "name": "Social Security Contributions",
+      "type": "flatRate",
+      "rate": 0.17,
+      "threshold": 0
+    }
+  ],
+  "capitalGainsTax": {
+    "indexFunds": 0.15,
+    "etfs": 0.15,
+    "investmentTrusts": 0.15,
+    "individualShares": 0.15,
+    "bonds": 0.15
+  },
+  "pensionContribution": {
+    "type": "fixedRate",
+    "employeeRate": 0.11,
+    "employerRate": 0.17
+  },
+  "personalAssetsTax": {
+    "type": "bracket",
+    "brackets": [
+      {"rate": 0.005, "from": 3000000, "to": 6500000},
+      {"rate": 0.0075, "from": 6500000.01, "to": 18000000},
+      {"rate": 0.01, "from": 18000000.01, "to": 100000000},
+      {"rate": 0.0125, "from": 100000000.01, "to": 300000000},
+      {"rate": 0.015, "from": 300000000.01, "to": null}
+    ]
+  }
+}
